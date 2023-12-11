@@ -1,0 +1,20 @@
+{
+	"core": null,
+	"phpVersion": "8.2",
+	"port": 8888,
+    "env": {
+        "tests": {
+            "port": 8889
+        }
+    },
+	"plugins": [
+		"./plugins/myplugin",
+		"https://downloads.wordpress.org/plugin/transients-manager.2.0.3.zip"
+	],
+	"lifecycleScripts": {
+        "afterStart": ".afterStart"
+    },
+	"mappings": {
+        ".htaccess": ".htaccess"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "lil-wp-env",
+    "devDependencies": {
+        "@wordpress/env": "^8.13.0"
+    },
+    "scripts": {
+        "up": "WP_ENV_HOME=wp-env-home wp-env start",
+        "stop": "WP_ENV_HOME=wp-env-home wp-env stop",
+        "up-xdebug": "WP_ENV_HOME=wp-env-home wp-env start --xdebug=profile,trace,debug",
+        "wp-env": "WP_ENV_HOME=wp-env-home wp-env",
+        "cli": "WP_ENV_HOME=wp-env-home wp-env run cli bash",
+        "bash": "WP_ENV_HOME=wp-env-home wp-env run wordpress bash",
+        "phpunit": "npm run wp-env run tests-cli ~/.composer/vendor/bin/phpunit -- -c wp-content/plugins/myplugin/tests/phpunit/phpunit.xml"
+    },
+    "config": {}
+}
