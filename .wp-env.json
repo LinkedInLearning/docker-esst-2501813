@@ -12,7 +12,7 @@
 		"https://downloads.wordpress.org/plugin/transients-manager.2.0.3.zip"
 	],
 	"lifecycleScripts": {
-        "afterStart": ".afterStart"
+        "afterStart": "./afterStart.sh"
     },
 	"mappings": {
         ".htaccess": ".htaccess"
