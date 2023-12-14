@@ -5,6 +5,7 @@
     },
     "scripts": {
         "up": "WP_ENV_HOME=wp-env-home wp-env start",
+        "windows-up": "set \"WP_ENV_HOME=wp-env-home\" && wp-env start",
         "stop": "WP_ENV_HOME=wp-env-home wp-env stop",
         "up-xdebug": "WP_ENV_HOME=wp-env-home wp-env start --xdebug=profile,trace,debug",
         "wp-env": "WP_ENV_HOME=wp-env-home wp-env",
