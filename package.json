@@ -1,7 +1,7 @@
 {
     "name": "lil-wp-env",
     "devDependencies": {
-        "@wordpress/env": "^8.13.0"
+        "@wordpress/env": "^9.0.0"
     },
     "scripts": {
         "up": "WP_ENV_HOME=wp-env-home wp-env start",
