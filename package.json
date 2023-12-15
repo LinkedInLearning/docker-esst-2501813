@@ -4,14 +4,11 @@
         "@wordpress/env": "^8.13.0"
     },
     "scripts": {
-        "wp-env": "WP_ENV_HOME=wp-env-home wp-env",
-        "windows-up": "set \"WP_ENV_HOME=wp-env-home\" && wp-env start",
-
+        "wp-env": "wp-env",   
         "up": "npm run wp-env start",
         "stop": "npm run wp-env stop",
         "up-xdebug": "npm run wp-env start --xdebug=profile,trace,debug",
-        "cli": "npm run wp-env run cli bash",
-        "bash": "npm run wp-env wordpress bash",
+        "bash": "npm run wp-env run cli bash",
         "phpunit": "npm run wp-env run tests-cli ~/.composer/vendor/bin/phpunit -- -c wp-content/plugins/myplugin/tests/phpunit/phpunit.xml"
     },
     "config": {}
