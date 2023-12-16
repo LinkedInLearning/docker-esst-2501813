@@ -9,7 +9,7 @@
         "stop": "npm run wp-env stop",
         "up-xdebug": "npm run wp-env start --xdebug=profile,trace,debug",
         "bash": "npm run wp-env run cli bash",
-        "phpunit": "npm run wp-env run tests-cli ~/.composer/vendor/bin/phpunit -- -c wp-content/plugins/myplugin/tests/phpunit/phpunit.xml"
+        "phpunit": "npm run wp-env run tests-cli phpunit -- -c wp-content/plugins/myplugin/phpunit.xml.dist"
     },
     "config": {}
 }
