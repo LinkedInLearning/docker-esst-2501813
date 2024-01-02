@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8080:80
+
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+
+volumes:
+  db_data: {}
